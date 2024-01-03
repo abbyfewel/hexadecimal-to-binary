@@ -1,0 +1,217 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main() {
+  string hex; // the hexadecimal number
+  string binary; // the binary number version of the hex number
+  string bin0; //binary of first digit
+  string bin1; //binary of second digit
+  string bin2; // binary of third digit 
+  string bin3; // binary of fourth digit
+  string bin4; // binary of fifth digit
+  cout << "Enter a hexidecimal number: "; 
+  cin >> hex; 
+  if (hex.length() >5) { // making sure the number is valid
+    cout << "Too long. Please try again. ";
+  } else { // if it is valid...
+    for (int i = 0; i <= (hex.length()); i++) {
+      if (hex[i] == '0') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0000";
+        } else if (i ==1) {
+          bin1 = "0000";
+        } else if (i == 2) {
+          bin2 = "0000";
+        } else if (i == 3) {
+          bin3 = "0000";
+        } else if (i == 4) {
+          bin4 = "0000";
+        }
+      } else if (hex[i] == '1') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0001";
+        } else if (i ==1) {
+          bin1 = "0001";
+        } else if (i == 2) {
+          bin2 = "0001";
+        } else if (i == 3) {
+          bin3 = "0001";
+        } else if (i == 4) {
+          bin4 = "0001";
+        }
+      } else if (hex [i] == '2') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0010";
+        } else if (i ==1) {
+          bin1 = "0010";
+        } else if (i == 2) {
+          bin2 = "0010";
+        } else if (i == 3) {
+          bin3 = "0010";
+        } else if (i == 4) {
+          bin4 = "0010";
+        }
+      } else if (hex [i] == '3') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0011";
+        } else if (i ==1) {
+          bin1 = "0011";
+        } else if (i == 2) {
+          bin2 = "0011";
+        } else if (i == 3) {
+          bin3 = "0011";
+        } else if (i == 4) {
+          bin4 = "0011";
+        }
+      } else if (hex [i] == '4') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0100";
+        } else if (i ==1) {
+          bin1 = "0100";
+        } else if (i == 2) {
+          bin2 = "0100";
+        } else if (i == 3) {
+          bin3 = "0100";
+        } else if (i == 4) {
+          bin4 = "0100";
+        }
+      } else if (hex [i] == '5') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0101";
+        } else if (i ==1) {
+          bin1 = "0101";
+        } else if (i == 2) {
+          bin2 = "0101";
+        } else if (i == 3) {
+          bin3 = "0101";
+        } else if (i == 4) {
+          bin4 = "0101";
+        }
+      } else if (hex [i] == '6') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0110";
+        } else if (i ==1) {
+          bin1 = "0110";
+        } else if (i == 2) {
+          bin2 = "0110";
+        } else if (i == 3) {
+          bin3 = "0110";
+        } else if (i == 4) {
+          bin4 = "0110";
+        }
+      } else if (hex [i] == '7') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "0111";
+        } else if (i ==1) {
+          bin1 = "0111";
+        } else if (i == 2) {
+          bin2 = "0111";
+        } else if (i == 3) {
+          bin3 = "0111";
+        } else if (i == 4) {
+          bin4 = "0111";
+        }
+      } else if (hex [i] == '8') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1000";
+        } else if (i ==1) {
+          bin1 = "1000";
+        } else if (i == 2) {
+          bin2 = "1000";
+        } else if (i == 3) {
+          bin3 = "1000";
+        } else if (i == 4) {
+          bin4 = "1000";
+        }
+      } else if (hex [i] == '9') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1001";
+        } else if (i ==1) {
+          bin1 = "1001";
+        } else if (i == 2) {
+          bin2 = "1001";
+        } else if (i == 3) {
+          bin3 = "1001";
+        } else if (i == 4) {
+          bin4 = "1001";
+        }
+      } else if (hex [i] == 'A') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1010";
+        } else if (i ==1) {
+          bin1 = "1010";
+        } else if (i == 2) {
+          bin2 = "1010";
+        } else if (i == 3) {
+          bin3 = "1010";
+        } else if (i == 4) {
+          bin4 = "1010";
+        }
+      } else if (hex [i] == 'B') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1011";
+        } else if (i ==1) {
+          bin1 = "1011";
+        } else if (i == 2) {
+          bin2 = "1011";
+        } else if (i == 3) {
+          bin3 = "1011";
+        } else if (i == 4) {
+          bin4 = "1011";
+        }
+      } else if (hex [i] == 'C') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1100";
+        } else if (i ==1) {
+          bin1 = "1100";
+        } else if (i == 2) {
+          bin2 = "1100";
+        } else if (i == 3) {
+          bin3 = "1100";
+        } else if (i == 4) {
+          bin4 = "1100";
+        }
+      } else if (hex [i] == 'D') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1101";
+        } else if (i ==1) {
+          bin1 = "1101";
+        } else if (i == 2) {
+          bin2 = "1101";
+        } else if (i == 3) {
+          bin3 = "1101";
+        } else if (i == 4) {
+          bin4 = "1101"; 
+        }
+      } else if (hex [i] == 'E') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1110";
+        } else if (i ==1) {
+          bin1 = "1110";
+        } else if (i == 2) {
+          bin2 = "1110";
+        } else if (i == 3) {
+          bin3 = "1110";
+        } else if (i == 4) {
+          bin4 = "1110";
+        }
+      } else if (hex [i] == 'F') { // determining binary number for a hex digit
+        if (i == 0) {
+          bin0 = "1111";
+        } else if (i ==1) {
+          bin1 = "1111";
+        } else if (i == 2) {
+          bin2 = "1111";
+        } else if (i == 3) {
+          bin3 = "1111";
+        } else if (i == 4) {
+          bin4 = "1111";
+        }
+      }
+      binary = bin0 + bin1 + bin2 + bin3 + bin4; // compiling the binary number
+    }
+    cout << "The number in binary is " << binary << ".\n"; 
+  }
+}
